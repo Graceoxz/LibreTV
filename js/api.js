@@ -247,7 +247,7 @@ async function handleCustomApiSpecialDetail(id, customApi) {
         
         // 处理链接
         matches = matches.map(link => {
-            link = link.substring(1, link.length);
+            link = link.substring(50, link.length);
             const parenIndex = link.indexOf('(');
             return parenIndex > 0 ? link.substring(0, parenIndex) : link;
         });
